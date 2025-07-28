@@ -1,0 +1,1956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SRM ECO TECH - Sustainability Consultants</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script>
+  <link rel="stylesheet" href="main.css" />
+  
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2E7D32',
+            secondary: '#81C784'
+          },
+          borderRadius: {
+            'none': '0px',
+            'sm': '4px',
+            DEFAULT: '8px',
+            'md': '12px',
+            'lg': '16px',
+            'xl': '20px',
+            '2xl': '24px',
+            '3xl': '32px',
+            'full': '9999px',
+            'button': '8px'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!--<style>
+    .hero-section {
+      background-image: linear-gradient(
+        to right, 
+        rgba(255, 255, 255, 0.95) 40%, 
+        rgba(255, 255, 255, 0.7) 60%, 
+        rgba(255, 255, 255, 0.2) 80%, 
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url('https://readdy.ai/api/search-image?query=professional%20sustainable%20business%20environment%20with%20green%20plants%2C%20modern%20office%20setting%2C%20eco-friendly%20workspace%2C%20natural%20lighting%2C%20clean%20minimal%20design%2C%20soft%20green%20accents%2C%20sustainable%20technology%2C%20recycling%20bins%2C%20energy%20efficient%20lighting%2C%20wooden%20elements&width=1200&height=600&seq=1&orientation=landscape');
+      background-size: cover;
+      background-position: right center;
+    }
+    .custom-calendar td {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .custom-calendar td.available:hover {
+      background-color: rgba(46, 125, 50, 0.2);
+    }
+    .custom-calendar td.selected {
+      background-color: #2E7D32;
+      color: white;
+    }
+    .custom-calendar td.unavailable {
+      color: #d1d5db;
+      cursor: not-allowed;
+    }
+    .time-slot {
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .time-slot:hover {
+      background-color: rgba(46, 125, 50, 0.1);
+    }
+    .time-slot.selected {
+      background-color: #2E7D32;
+      color: white;
+    }
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  </style>-->
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-white shadow-sm dark:bg-gray-800">
+<div class="container mx-auto px-4 py-3 flex justify-between items-center">
+<a class="flex items-center gap-2" href="/index.html">
+<!-- Light mode logo -->
+<img 
+  alt="SRM ECO TECH Logo" 
+  class="w-40 h-14 object-contain rounded-none block dark:hidden" 
+  src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=412,fit=crop,q=95/dOq7o9ZveWIBEK2k/logo-3-mk3ybPO4GgU4n42Q.png"
+/>
+
+<!-- Dark mode logo -->
+<img 
+  alt="SRM ECO TECH Logo Dark" 
+  class="w-40 h-14 object-contain rounded-none hidden dark:block" 
+  src="SRM Logo\SRM Dark logo.jpg"
+/>
+
+<!--<span class="text-2xl font-['Pacifico'] text-primary">SRM ECO TECH</span>-->
+</a>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-gray-700 hover:text-primary transition-colors scroll-smooth dark:text-gray-200" href="about.html">About Us</a>
+<div class="relative group">
+<button class="flex items-center gap-1 text-gray-700 hover:text-primary transition-colors dark:text-gray-200">
+      EPR Services
+      <i class="ri-arrow-down-s-line"></i>
+</button>
+<div class="absolute hidden group-hover:block w-56 bg-white border border-gray-100 rounded-lg shadow-lg p-2 mt-1 dark:bg-gray-800 dark:border-gray-700">
+<a class="block px-3 py-2 rounded hover:bg-gray-50 text-gray-700 hover:text-primary transition-colors dark:text-gray-200" href="epr-registration.html">EPR Registration</a>
+<a class="block px-3 py-2 rounded hover:bg-gray-50 text-gray-700 hover:text-primary transition-colors dark:text-gray-200" href="compliance-solutions.html">Compliance Solutions</a>
+</div>
+</div>
+<div class="relative group">
+<button class="flex items-center gap-1 text-gray-700 hover:text-primary transition-colors dark:text-gray-200">
+      Software Services
+      <i class="ri-arrow-down-s-line"></i>
+</button>
+<div class="absolute hidden group-hover:block w-56 bg-white border border-gray-100 rounded-lg shadow-lg p-2 mt-1 dark:bg-gray-800 dark:border-gray-700">
+<a class="block px-3 py-2 rounded hover:bg-gray-50 text-gray-700 hover:text-primary transition-colors dark:text-gray-200" href="custom-development.html">Custom Development</a>
+<a class="block px-3 py-2 rounded hover:bg-gray-50 text-gray-700 hover:text-primary transition-colors dark:text-gray-200" href="system-integration.html">System Integration</a>
+<a class="block px-3 py-2 rounded hover:bg-gray-50 text-gray-700 hover:text-primary transition-colors dark:text-gray-200" href="workflow-solutions.html">Workflow Solutions</a>
+</div>
+</div>
+<a class="text-gray-700 hover:text-primary transition-colors scroll-smooth dark:text-gray-200" href="careers.html">Careers</a>
+<a class="text-gray-700 hover:text-primary transition-colors scroll-smooth dark:text-gray-200" href="blogs.html">Blogs</a>
+<a class="text-gray-700 hover:text-primary transition-colors scroll-smooth dark:text-gray-200" href="notices.html">Notices</a>
+<a class="text-gray-700 hover:text-primary transition-colors scroll-smooth dark:text-gray-200" href="contact.html">Contact</a>
+</nav>
+<div class="flex items-center gap-3"><button aria-label="Toggle Dark Mode" class="w-10 h-10 flex items-center justify-center bg-gray-200 text-gray-700 rounded-full shadow hover:bg-gray-300 transition-colors dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600" id="dark-mode-toggle"><i class="ri-moon-line ri-lg"></i></button>
+<a class="hidden md:block bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap hover:bg-opacity-90 transition-colors" href="schedule.html">
+    Schedule a Call
+  </a>
+<button aria-label="User Login" class="w-10 h-10 flex items-center justify-center bg-primary text-white rounded-full shadow-lg hover:bg-green-700 transition-colors ml-1" id="user-login-btn">
+<i class="ri-user-line ri-lg"></i>
+</button>
+<button class="md:hidden w-10 h-10 flex items-center justify-center text-gray-700 dark:text-gray-200" id="mobile-menu-button">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+<!-- Mobile Menu -->
+<div class="hidden md:hidden bg-white border-t dark:bg-gray-800 dark:border-gray-700" id="mobile-menu">
+<div class="container mx-auto px-4 py-3 flex flex-col gap-3">
+<div class="border-b pb-2 mb-2">
+<a class="py-2 text-gray-700 hover:text-primary transition-colors dark:text-gray-200" href="about.html">About Us</a>
+<button class="flex items-center justify-between w-full py-2 text-gray-700 dark:text-gray-200" id="mobile-epr-menu">
+    EPR Compliance Services
+    <i class="ri-arrow-down-s-line"></i>
+</button>
+<div class="hidden pl-4 mt-2 space-y-2" id="mobile-epr-submenu">
+<a class="block py-2 text-gray-700 hover:text-primary transition-colors dark:text-gray-200" href="/epr-registration.html">EPR Registration</a>
+<a class="block py-2 text-gray-700 hover:text-primary transition-colors dark:text-gray-200" href="/compliance-solutions.html">Compliance Solutions</a>
+</div>
+<button class="flex items-center justify-between w-full py-2 text-gray-700 mt-2 dark:text-gray-200" id="mobile-it-menu">
+    IT &amp; Software Services
+    <i class="ri-arrow-down-s-line"></i>
+</button>
+<div class="hidden pl-4 mt-2 space-y-2" id="mobile-it-submenu">
+<a class="block py-2 text-gray-700 hover:text-primary transition-colors dark:text-gray-200" href="/custom-development.html">Custom Development</a>
+<a class="block py-2 text-gray-700 hover:text-primary transition-colors dark:text-gray-200" href="/system-integration.html">System Integration</a>
+<a class="block py-2 text-gray-700 hover:text-primary transition-colors dark:text-gray-200" href="/workflow-solutions.html">Workflow Solutions</a>
+</div>
+</div>
+<a class="py-2 text-gray-700 hover:text-primary transition-colors dark:text-gray-200" href="/about.html">About Us</a>
+<a class="py-2 text-gray-700 hover:text-primary transition-colors dark:text-gray-200" href="/careers.html">Careers</a>
+<a class="py-2 text-gray-700 hover:text-primary transition-colors dark:text-gray-200" href="/blogs.html">Blogs</a>
+<a class="py-2 text-gray-700 hover:text-primary transition-colors dark:text-gray-200" href="/notices.html">Notices</a>
+<a class="py-2 text-gray-700 hover:text-primary transition-colors dark:text-gray-200" href="/contact.html">Contact</a>
+<a class="bg-primary text-white px-4 py-2 rounded-button whitespace-nowrap text-center hover:bg-opacity-90 transition-colors" href="/schedule.html">
+Schedule a Call
+</a>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section relative min-h-[600px] overflow-hidden">
+  <div class="absolute inset-0 w-full h-full" id="hero-slider">
+    <div class="slide absolute inset-0 opacity-100 transition-opacity duration-1000" id="slide1">
+      <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/40">
+        <img alt="EPR Services" class="w-full h-full object-cover" src="https://readdy.ai/api/search-image?query=modern%20elegant%20office%20space%20with%20light%20green%20and%20white%20tones%2C%20environmental%20sustainability%20elements%2C%20minimal%20corporate%20aesthetic%20with%20gently%20curving%20architectural%20lines%2C%20soft%20diffused%20lighting%20casting%20gentle%20shadows%2C%20potted%20plants%2C%20and%20modern%20tech%20elements%20in%20muted%20tones%2C%20tranquil%20professional%20atmosphere&amp;width=1600&amp;height=800&amp;seq=1&amp;orientation=landscape"/>
+      </div>
+    </div>
+    <div class="slide absolute inset-0 opacity-0 transition-opacity duration-1000" id="slide2">
+      <div class="absolute inset-0 bg-gradient-to-r from-white via-white/90 to-white/40">
+        <img alt="IT Solutions" class="w-full h-full object-cover" src="https://readdy.ai/api/search-image?query=sophisticated%20tech%20workspace%20with%20understated%20elegance%2C%20clean%20minimalist%20design%20in%20light%20gray%20and%20white%20tones%2C%20subtle%20environmental%20elements%2C%20polished%20glass%20surfaces%20reflecting%20soft%20light%2C%20modern%20displays%20showing%20data%20in%20muted%20colors%2C%20peaceful%20professional%20environment%20with%20natural%20touches&amp;width=1600&amp;height=800&amp;seq=2&amp;orientation=landscape"/>
+      </div>
+    </div>
+  </div>
+  <div class="container relative mx-auto px-4 min-h-[600px] flex items-center">
+    <div class="max-w-2xl">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-gray-900">Innovative IT Solutions for Environmental Excellence</h1>
+      <p class="text-lg mb-8 text-[#4B5563]"> <!-- Fixed color to match light mode's gray-700 -->
+        Leveraging cutting-edge technology to transform sustainability practices, optimize resource management, and drive environmental compliance through intelligent digital solutions.
+      </p>
+      <div class="flex flex-wrap gap-4 mb-8">
+        <a class="bg-primary text-white px-6 py-3 rounded-button whitespace-nowrap hover:bg-opacity-90 transition-colors" href="#services">
+          Explore IT Services
+        </a>
+        <a class="bg-white border-2 border-primary text-primary dark:text-white px-6 py-3 rounded-button whitespace-nowrap hover:bg-gray-50 transition-colors dark:bg-gray-800" href="#schedule">
+          Schedule Demo
+        </a>
+      </div>
+      <div class="flex gap-2">
+        <button class="w-3 h-3 rounded-full bg-primary transition-colors duration-500" id="dot1"></button>
+        <button class="w-3 h-3 rounded-full bg-gray-300 transition-colors duration-500" id="dot2"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="py-16 bg-white dark:bg-gray-800" id="services">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-3">Our Services</h2>
+<p class="text-gray-600 max-w-2xl mx-auto dark:text-gray-300">Comprehensive solutions tailored to meet your sustainability goals and compliance requirements.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Software Development -->
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+<div class="w-14 h-14 flex items-center justify-center bg-green-50 rounded-full text-primary mb-4">
+<i class="ri-code-s-slash-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Software Development</h3>
+<p class="text-gray-600 mb-4 dark:text-gray-300">Innovative technology solutions tailored to streamline operations, enhance productivity, and drive digital transformation.</p>
+<ul class="space-y-2 mb-6">
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Custom Web & Mobile Applications</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">API & System Integrations</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Automation & Workflow Optimization &amp; Metrics</span>
+</li>
+</ul>
+<a class="text-primary font-medium flex items-center gap-1 hover:underline" href="#">
+Learn more
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+<!-- IT Services -->
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+<div class="w-14 h-14 flex items-center justify-center bg-green-50 rounded-full text-primary mb-4">
+<i class="ri-computer-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">IT Services</h3>
+<p class="text-gray-600 mb-4 dark:text-gray-300">Comprehensive IT solutions to ensure seamless infrastructure, secure operations, and efficient technology management.</p>
+<ul class="space-y-2 mb-6">
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Cloud & Server Management</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">IT Security & Data Protection</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Network Setup & Maintenance</span>
+</li>
+</ul>
+<a class="text-primary font-medium flex items-center gap-1 hover:underline" href="#">
+Learn more
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+<!-- Sustainability Consulting -->
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+<div class="w-14 h-14 flex items-center justify-center bg-green-50 rounded-full text-primary mb-4">
+<i class="ri-leaf-line ri-2x"></i>
+</div>
+<h3 class="text-xl font-semibold mb-3">Sustainability Consulting</h3>
+<p class="text-gray-600 mb-4 dark:text-gray-300">Expert guidance on EPR compliance, sustainability strategy, and environmental performance improvement.</p>
+<ul class="space-y-2 mb-6">
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">EPR Registration</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Environmental Impact Assessment</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Sustainability Reporting &amp; Metrics</span>
+</li>
+</ul>
+<a class="text-primary font-medium flex items-center gap-1 hover:underline" href="#">
+Learn more
+<div class="w-5 h-5 flex items-center justify-center">
+<i class="ri-arrow-right-line"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-16 bg-gray-50 dark:bg-gray-900" id="about">
+<div class="container mx-auto px-4">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-3xl font-bold mb-4">About SRM ECO TECH</h2>
+<p class="text-gray-600 mb-4 dark:text-gray-300">SRM ECO TECH is a leading sustainability consulting firm in India, specializing in EPR services, waste management solutions, and innovative IT development.</p>
+<p class="text-gray-600 mb-6 dark:text-gray-300">Our mission is to help businesses navigate the complex landscape of environmental regulations while implementing sustainable practices that benefit both the planet and their bottom line.</p>
+<div class="grid grid-cols-2 gap-6 mb-6">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 flex items-center justify-center bg-green-100 rounded-full text-primary">
+<i class="ri-shield-check-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-semibold">Certified Experts</h4>
+<p class="text-sm text-gray-600 dark:text-gray-300">Team of qualified environmental specialists</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 flex items-center justify-center bg-green-100 rounded-full text-primary">
+<i class="ri-customer-service-2-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-semibold">24/7 Support</h4>
+<p class="text-sm text-gray-600 dark:text-gray-300">Round-the-clock assistance for clients</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 flex items-center justify-center bg-green-100 rounded-full text-primary">
+<i class="ri-award-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-semibold">Industry Recognition</h4>
+<p class="text-sm text-gray-600 dark:text-gray-300">Award-winning sustainability solutions</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 flex items-center justify-center bg-green-100 rounded-full text-primary">
+<i class="ri-global-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-semibold">Pan-India Coverage</h4>
+<p class="text-sm text-gray-600 dark:text-gray-300">Services available across India</p>
+</div>
+</div>
+</div>
+<a class="inline-block bg-primary text-white px-6 py-3 rounded-button whitespace-nowrap hover:bg-opacity-90 transition-colors" href="#contact">
+Get in Touch
+</a>
+</div>
+<div class="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
+<img alt="SRM ECO TECH Team" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=professional%20team%20of%20environmental%20consultants%20in%20a%20modern%20green%20office%2C%20diverse%20group%20of%20experts%20discussing%20sustainability%20solutions%2C%20eco-friendly%20workspace%20with%20plants%2C%20natural%20lighting%2C%20recycling%20bins%2C%20sustainable%20design%20elements%2C%20professional%20attire%2C%20collaborative%20environment&amp;width=600&amp;height=400&amp;seq=2&amp;orientation=landscape"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Client List Section (replaces Stats Section) -->
+
+<!-- Client List Section (replaces Stats Section) -->
+<section class="py-12 bg-white dark:bg-gray-900">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-3 text-primary">Our Clients</h2>
+      <p class="text-gray-900 dark:text-white max-w-2xl mx-auto">
+        We are proud to partner with leading organizations across industries. Here are some of the clients who trust SRM ECO TECH for their sustainability journey.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+      <!-- Client 1 -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex items-center justify-center hover:shadow-xl transition-shadow h-28">
+        <img alt="Client 1" class="max-h-16 object-contain" src="data:image/jpeg;base64,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K0/4vfmzMcb7lsWH7HU0Vi4OkPW8i38oACnxemYaTue6WMNYbAxgaLAAAbgNAuhFYiNRCV9rYEBBjsfw81NLNTh2UyscwOIuBmFr24rS9equmtq9VdMViWzLpaKCkEgBhdA7PlJB5reAL6XUdsO6xViabrp8bSbLuqqiOoY+O7GOZkmi52Ozjcua24s/t7AmTDNrbiS1ZmVnS7EOZFTx88DzFU6ovktmBv0AAeide5a1warEb+WsYvH8MjWbOyOqp6qOVrTLA2JoMefKWm5cQTZwI0st7Ypm3VDbo/VMsXQ7Dva6eR8sTXywvhtDDzUfT1zvZmOZw7wo4wzuZmWtaT9rybZN/M0nNT5KikblZLluw3bleHMJ3Edq2nF2jXmGejwtp9iXyQ1PO1GeoqebzSZLMa2M3a1rAdB4rHsb3ufJOPcSzGJ4EZpaSQPA8mfmItfN0Mthrot7YtzE/TM07w84dnnNnrZucFqprGgWPQyscy5N9fOWIxatNt+To7zKywrZB0BoiZWu8kZI09EjPzl9Rrpa/asRh1rv4YjHrX8Plux7v+GSYfzzbve53OZTYZpectlv4b1icP6OnZ7f6dMdtBB5NVulidWROkjjbI+GFsscpa3KAL3yPAA1OmoWl69Ntw1tGp7MvyeYZLT0IbK0se58kmVxu4Bx0zW46XPepOPSa07tsVdV08aLYOA85JV3mmkke9zw57G9I6NDQ7cBpqkcevffye3EsTiGzzqOKC8lQ50EkvMzQRZ3RRPF+bkYT0xqRcKK2Lp1/DXo6YeeB4BPVDEHSOlaKmNkTJZ2Br3FubM/mxbK0XAATHjtbq38sVrvbZ8T2cdNFSRiQDyaSN5OUnNzbbWGul1NbFuIj6bzTtC0+S1TFJL5JWczFNIZXtMYe9j3G7zG4mwv2grHtTWe0kUmPCtdsvOamWemqua8oYxkwMYcTkblDmHQNNlrbDO5ms+Sad9vPD9jnRChHOtPkbpHHoHp84CABr0bX7VmuDWu/hiMfj+F3S7OSRVc8rJm8zUkuliLOlmLMvRkB0HHcs+3O5nfaW0U1Mz9sQzYaoEUdMawGCGRr42GIXs117PcDr2W4rT/AB51rbT258bZ7D9n+bnrJXvDm1ZZ0LEFrWsLCCb63upaY9TM/beKamZYfCth3QPY0SQPhYbjNTRmctvcNdLx77X0CjphmP6Yrj03ZWoSKoCAgICCiCqAgICAgIKICwFlkEBAQEBBVAQUQLIFkCyBZAsgWQVWAWRRAQEFUFEBAQVQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEH//2Q==" />
+      </div>
+
+      <!-- Client 2 -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex items-center justify-center hover:shadow-xl transition-shadow h-28">
+        <img alt="Client 2" class="max-h-16 object-contain" src="https://www.vardhman.com/images/logo.svg" />
+      </div>
+
+      <!-- Client 3 -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex items-center justify-center hover:shadow-xl transition-shadow h-28">
+        <img alt="Client 3" class="max-h-16 object-contain" src="data:image/png;base64,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" />
+      </div>
+
+      <!-- Client 4 -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex items-center justify-center hover:shadow-xl transition-shadow h-28">
+        <img alt="Client 4" class="max-h-16 object-contain" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEGNN5-RoaTCdCiOkUI6ZR0otRL08z5TwcyA&s" />
+      </div>
+
+      <!-- Client 5 -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex items-center justify-center hover:shadow-xl transition-shadow h-28">
+        <img alt="Client 5" class="max-h-16 object-contain" src="data:image/png;base64,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" />
+      </div>
+
+      <!-- Client 6 -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex items-center justify-center hover:shadow-xl transition-shadow h-28">
+        <img alt="Client 6" class="max-h-16 object-contain" src="data:image/jpeg;base64,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" />
+      </div>
+
+      <!-- Client 7 -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex items-center justify-center hover:shadow-xl transition-shadow h-28">
+        <img alt="Client 7" class="max-h-16 object-contain" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0PDxAPDw0NDQ8NDw8PDw0NDQ8NDQ0NFREWFhURFRUYHSggGBolHhUVITEhJSkrLi4uFx8zODMvNygtLisBCgoKDg0OGxAQGjclICYtLS0tNS0uLi0uLS0rKzYtNy4tLS0tLS0vLS0tLS0tKy0tLSstLS0tLS0tLS0tLS0tLf/AABEIAOAA4QMBEQACEQEDEQH/xAAbAAADAQEBAQEAAAAAAAAAAAAAAgMBBAUGB//EAD4QAAICAgADBAYGCAUFAAAAAAABAgMEEQUSIQYTMUEUIlFhcYEjMlJykaE0QmKSsbKz8DNDc4LBBzV0g9H/xAAaAQEAAgMBAAAAAAAAAAAAAAAAAQIDBAUG/8QALBEBAAICAQIDBwQDAAAAAAAAAAECAxEEITEFEkETMjRRYXGBFCKRoRUj0f/aAAwDAQACEQMRAD8A/SYRA6IRAtCIFooCsUA6QDpAMkBugN0BugNAAAAAAADNAZoDGgMaAVoBGgEkgIyiBKcQITiBzziBPlA6oRA6IIC0EBWKApFAOkA6QGgboDQNAAAA0AaAAAAAwDGgMAVoBWgEkgJyQEZoCE4gQnECfKB0wQF4IC0EBWKAokAyQDIBkgADQNSANAaAAAABmgMAAMAxoDGArQCNAJJASnECE0BGaAnoDoggLwQFYoCkUBRIBkBqQDAAGoDQAAAAAAAAADNAYAAK0BjARoBJICckBGaAhNAT0B0QQF4oCkUBRIB0AyQGgaAwAAAAAAAAAAAAAAAKBgGMBWgEaAnJASkgISQE9AdEEBaKArFAOgGSAYATRG4GuSWttLfRb82JmI7jVJPwfh4+4RMSNJAAAAAAAAAAAAABjAwDAFYCsCckBOSAhNAJoC8EBWIFEA6AdAaB5ORfy5EI/bcpSe/stJfl0OZlzeTkVr89z/Csz10hO6zIl6rSg30evXSXs9j2vH+3itkvyLft6R/Z1l0YNsq7OSb259G/2k9L+/eZsF7Y8nkv6p29c6SQAAAAAAAAAAAAAAYwMAVgKwEkgJSAlNATAtFAWiBRAMgGA0D5/iEOe6W9RcObT6+qnH6z93RficPk19pmnfTSk9Zevw/FUILzbXj7jp8bDFKQvCVuIlap8vPGfivHkl5S/JFLYYjL5tbif6Rp6BuJAAAAAAAAAAAAAAAAKBgCsBWgJSQEpoCegLQArECiAZAMgNQHg8WsTtcI9HJR59Jba3qK/Hf4I4/MvHtPLHfptWZdlfEuVqM9a9b1/BLT1rX4fibFeX5ZiLdvmnb00b8JBIAAAAAAAAAAAAAAAAxgYAjAVgJJARmgFApFAViA6AZAMBoHzGZF9+/FyU9/eW+n/B53PX/fr12pPd6mbgLuko9OTrteO/adLPxonFqvotMdFOEXynFuUk2mlpeX5fAycPJa9d2kh6BuJAAAAAAAAAAAAAAAAYwMAVgKwEkBKQE9AVigKoB0AyA0BgPDy4x9ITc4rUoajtLxa23/AH7DkZ4p7eJmVem3r9/X9uH7yOl7Wnzhbby++jTbvcXGbklqS6efj5eS0c+ctcGTe+ko3D1qrFKKkvBrZ06Xi0RMJOWABkWn1XVe0AbSW30S6t+xAaBm1vW+vjrz1/bAG9dfYBoABnMt6318deegNAyUkvHp5fMDQFAxgIwEYE5AT6gViBRAOgGQDIDQPh+0OvS7Nra9T3dORHivFdTzZifowX95HiWHGu6VVak9KKXNpuUnp+XxMXK41ceecWP5ItXU6hPNhTGXLXt8vSU201Kfny+4w8quGlvJj9O8/VFtej7Ds7+jVfB/zM9f4V8LT7M9Ozn4nxxU5uJivwyVZzy+xLX0f7zjNfI6Kz1cnm5JcklGXK3GTjzJP3rzA8bsTnX5OFXfc69zc1GNcHFRjGTj123t9AIdr+IZNDx4VTqUcuyVElZW5uPqN8yakvYBWHFcmjMqxcnurIZUZujIqhKtqyC3KucW35eaYDvjEXxRYnsxZST9trlGTh8eVRfzA9jJ+pP7kv4AeL2M7Qxz8ZSeo3VKMbq101LXSa/Zkuq+a8gOntPl30Y0rqZQjKEq1qyDnGSlZGHk0/1tgdtCaskm+Zqqnb1rb5rOugPO4HxxZN+ZT0XotyjD9qvl037/AF42L8APSzfqr/Up/qxA6AFYGMBWAkgJTAQCsQHQDoB0BqA0D4jtDF+lWeH6nml+ojxfitZ/WT+GC/vO3jNLhK25dXPVcZJrVa5I7b978EbvPxTjm2aO89I+nRa8a6vn+V+796P/ANPPeWWJ9x2e/Rqvg/5me48L+Fp9mxTs+S7RPvas7LhKHe4uVQ8dOS3y4j9bp96dx0Fn21GTG2mNsOsbalOP3ZR2v4geH/05/wC2Y/8A7v60wIdu/r8P/wDLf9KQHflVrJzMWceteD3ts7f1HbOHJGtPz6OTfs0vaB8nnZSisbiSnHbz7siaUk5eiTlCiPv/AMOMH82B+iZD3XP7kv4AfAVYtmLiYHFcaLlKvDx4ZlMf8/G7uO5fejr8l7OofQ9pcyu/hkrqpc0LHjyjJex31/mB6HFM1Y8cm9/5ONGeva07dL5vSA+ZwYRw83h/rxl6ViPFvcZJ7yY/SKT15uUpL5gfY5v1V/qU/wBWIHQBjAUBWAjAnIBAKRAogGQDoDUBoHw/aL9Ks/2fyI8V4r8bP4YMnvOvMyowyrq7OtNqgpr7L5Y6mvejczciK8q2LJ7lojf/AFaZ1bTys/DlTPlfVPrCa+rOHk0cfl8W3Hvqe3pPzY7V0+mwsyNHDndLwppss+PLzPR7Dwr4Wn2Z6dk+EdnMb0SuF2PTO2dW7bZVQdjtmtzfM1ve5M6Kzl7CZEvQ7cWx7swLbseW/FxTbi/hra+QD/8ATeafDKNPfK7k/c+9k9fmgObtrdGb4dOMk4yy24yXg13Uuq9wHs9qcqVWFc4PVlkVTV7e9tarj+ct/IDg4l2XxJU+j149MZPEthCxVQU+8iq1GXNre9+fvYFuyXEHkcNrnL68KpU2J+KsrXK9+/on8wK9jNS4ZhppNPGrTT6prl1oD5LjuPZw5W4sVKWDnWVSx9baxshXQlKr7rSevh8QPpO0qVl1GL4rLtx+ePtopdts0/c+WK/3AcvbXg1NeJLIxsemq7EsryIyqqjBtQl1TaXhrb+QHvrKjdj1XQ6xteNZH4SsgwO8DGBjARgJICcgEApECiAZAOgNQGgfLcY4Tk2ZE7IVqUXy6bcOuopeD+B5jn+H8jJyZyY46dGK1Zmdw5sjhOdZJynCLk1rm3XFvw8dGvl8O5uWfNeI2rNLyaPDc9V9064yh4qM3CXI/bF76Fo4XO9n7OaxMfX0+yfLfWno18OqsxoY+VRbNR3zQXeKDfM2t8rW/JnoeBiti49aW7wyVjUPVhkKKSVd2ktLcJN6+L8TcWefXw7EjO22OPkQsyE1dOMr07N+31vw9nkBw4PZ3CrqdccfMrVi+khXflQhN611SnpgdPEOFYttVcHj3v0WGsaKdsFW4x1HWn1fRdWRuB052Lj3ut3UXzdMozr/AMWKjNdVNKLS5l7SReV30kX3d2lXZFvke9tw1/BgcNHDcamF0aKMirv1Jz5ZXrmm19b63R+9dQOjhVFOLVGqqrIjCPhCXeWKPm0uZvS9wFc1VXwddtFk4NxenW+kotNNe9NIDmliUyyvSZUXuyEIxrs+l9XblzJLekmnHprQHZkzhbCVc6rnCcXGS5JR3F9GtrqBy4uLVTXGmim6uCsrajLvHGKVik9czel4sD1wMYGMBGAsgJSAQCkQHQDoB0BqA0AAAAAAAAAA8DifCqoutp27tvhGX0s/CTe9dTi8vg46zWYmetuvWfVSaw6Lq/RIRVEeeV1sYatnJrbT8/LwM+Sv6SkRhjc2nXWZJ/b2bHOyY86tqqg41uyM1N930fhJ+QryeRXzRlrEdNxO+n5TufVzYfHZysUZKlpxnLdU5Sa5Y767+Br4PFLXyeW0R2ntO+yIvuSZWXl2V1zlXXCuc6ZKUZtz05x0UzcjlXx1tNYiszHaevWUTM6Lf2hsjKaUadQnKPK5y72SUteBF/Fr1vMREdJ136k3drzsuU7VVVTKNU+TcpyjJvlT/wCTZ/Vcm9rRjpExE66z9Np3O+iGXxyyPd6hXB2V877+UopPeuVaRjz+JXx+X9sRuN/unRNtO3g+dO5ScnS+VpLupOX478Db4PJtnrM21+J2ms7eib6zGAoCsBJATkAgDxAogHQDIBkBoAAAAAAAAABz5eMrOTba7uyNi15uPkYc2GMmt+k7NDKxVZybbXd2RsWvNpPp+ZGbDGTW/SdmjZeOrK51vaU4uLa8VstmxRlxzSfVExt52PwTllGUrpWKKklFxjFalHlfgc/F4b5LxabzOvt6oipVwSWoxeVa64OLVbUWtRe0vyIjw23SJyTqPTp6I8v1a+CPmlKOROClNz5VGD029vTZP+NmLzat5jrvXQ8n1ehi4qrdj233s+d78nypaX4G9hwxjm077ztfTn4hw+Vsk1dOtJa5VGMlv29TByuHOaYmLzH8KzG/U3DeHKnnfPKyVjW5SSXRLotIni8SMG53uZTEadxupKwMYCsBJASmAoDRYFUA6AZAaAwAAAAAAAAAAAAAAAAAAAAAAAKBjARgIwJzAQBogViA6AZAMgGQAAAAAAAAAAAAAAAAAAAAABjAwBWArARgSkwJ7AeLArECiAZAMgNQGgAAAAAAAAAAAAAAAAAAAAYwMAVgIwEkBGbAQBoMC0QKIBkAwGgMAAAAAAAAAAAAAAAAAAAAAoGMBWAjAnJgSmBPYDwYFYsCiYDoBkwGA1AaAAAAAAAAAAAAAAAAAAYwMAVgKwEkwJyAjNgT2A0GBaLArFgOgGQDAaAyAAAAAAAAAAAAAAAAAxgYBjAVgKwJyYE5MCE2AnMBsGBeLArFgOgHQDIBgABgAAAAAAAAAAAAAAYCgACsBWwEYE5MCUmBCbAnsBoMC8GBWLApFgUTAYBkBoABqYGgAAAAAAAAAGNgYBgAwFYCNgJJgTkwIzYEJsCfMBsGBeLAvFgUiwKJgMmAyAZMDQADdgGwNAAAAAzYBsDAMAzYGAK2AjYCSYEpsCM2BzzYCcwBCQHRCQFoMCsWBRMB0wHTA0DUwNA0AAAAAAAAAAwDGwMbAVsBWwEkwJyYEZsCM2BzzkBPYBXIDohIC8WBWLArFgOmA6YDJgMAbA3YGgAAAAAABmwM2BmwMbAVsBJMCcmBOTAjOQEJyAhOQEuYD//Z" />
+      </div>
+
+      <!-- Client 8 -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex items-center justify-center hover:shadow-xl transition-shadow h-28">
+        <img alt="Client 8" class="max-h-16 object-contain" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEg8SEREVFRAVFRYXEBcXFxgbFhcVFhcXGBUVFhYYHSggGBomHRYVJTIhJikrLi4uGB8zODMtNygtLysBCgoKDg0OGhAPGy0lHSU3Ny03Ky8yLS4tNSs3LS41LzY1Ny4tLSstLS4tLS0rLS0rLS0tLSstLS03LS0tLS0rLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcCBQgEAwH/xABKEAABAwICBgMJDAcJAQAAAAABAAIDBBEFEgYHITFBURNhsRQiMnFzgZGTshcjMzVCUlNUocHR0hY0YnSCkqIVJENjcsLh4vBV/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAEDAgQF/8QAKREBAAICAQMDAwQDAAAAAAAAAAECAxESBCExE1FhQZGhFDJxgQUVIv/aAAwDAQACEQMRAD8AvFERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBF+KOaXaSuoeitGH58282ta3V1pMs8uWuOs2t4SRFBcK04mqJAxtO0bCXHObADjuW3odJhJUxU5YA+Rr3Cx3NYNp9JCw/U4/U9Pfdzhz0y15U8JGiIt2wi1OkukEFBC6aZ2zcxo8J7uDWhVudcz/qTfWn8qC3kVQ+7M/wCpN9afyr6U2t+aRzWR0Ac9xsxokJJPId6gtpF5KCaUxNdO1sclrvaHXa3qzG11F8b1mYdTEtD3TPG8RC4B63kgIJmiqWfXNt7yj2cM0lj6A0r5e7NJ9Sb60/lQW+iqD3ZpPqTfWn8qe7NJ9Sb60/lQW+iqD3ZpPqTfWn8q2+iusievqY6dlG0XuZHdISGMG93g+LZ1oLIRRzTLS+DDI2ukBfI+/Rxt3m28kncBzUOw/XJGXgT0rmMPymOzEeNpAv5kFqIvNh1fFURslheHxvF2uG4r0oCIiAigusXTebDJKdscUbxI1xOcuFi0gbLeNRD3ZKv6rB6X/igulFXer/WBPiVS6GSG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" />
+      </div>
+
+      <!-- Client 9 -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex items-center justify-center hover:shadow-xl transition-shadow h-28">
+        <img alt="Client 9" class="max-h-16 object-contain" src="data:image/png;base64,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" />
+      </div>
+
+      <!-- Client 10 -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex items-center justify-center hover:shadow-xl transition-shadow h-28">
+        <img alt="Client 10" class="max-h-16 object-contain" src="Client logos\Manoj Trading logo.png" />
+      </div>
+
+      <!-- Client 11 -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex items-center justify-center hover:shadow-xl transition-shadow h-28">
+        <img alt="Client 11" class="max-h-16 object-contain" src="Client logos\Wing IT Logo.png" />
+      </div>
+
+      <!-- Client 12 -->
+      <div class="bg-white rounded-xl shadow-md p-4 flex items-center justify-center hover:shadow-xl transition-shadow h-28">
+        <img alt="Client 12" class="max-h-16 object-contain" src="data:image/jpeg;base64,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" />
+      </div>
+
+      <!-- Add more clients as needed, all using the same class setup -->
+    </div>
+  </div>
+</section>
+
+<!-- IT & Software Services Section -->
+<section class="py-16 bg-white dark:bg-gray-800">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-3">IT & Software Services</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto dark:text-gray-300">
+        End-to-end IT and software solutions designed to streamline business operations, enhance security, and drive digital transformation.
+      </p>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      
+      <!-- Software Development -->
+      <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center bg-green-50 rounded-full text-primary shrink-0">
+            <i class="ri-code-s-slash-line ri-lg"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Software Development</h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              Tailored software solutions to meet your unique business needs, ensuring scalability and efficiency.
+            </p>
+            <ul class="mt-4 space-y-2">
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700 dark:text-gray-200">Custom Web & Mobile Application Development</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700 dark:text-gray-200">API Integration & System Automation</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700 dark:text-gray-200">Cloud-based Software Solutions</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- IT Infrastructure & Security -->
+      <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center bg-green-50 rounded-full text-primary shrink-0">
+            <i class="ri-computer-line ri-lg"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">IT Infrastructure & Security</h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              Reliable IT solutions to maintain robust infrastructure and safeguard business-critical data.
+            </p>
+            <ul class="mt-4 space-y-2">
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700 dark:text-gray-200">Network Setup & Server Management</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700 dark:text-gray-200">Data Backup & Disaster Recovery</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700 dark:text-gray-200">Cybersecurity & Threat Mitigation</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- IT Consulting -->
+      <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center bg-green-50 rounded-full text-primary shrink-0">
+            <i class="ri-service-line ri-lg"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">IT Consulting</h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              Expert guidance on IT strategy, digital transformation, and technology adoption for your business.
+            </p>
+            <ul class="mt-4 space-y-2">
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700 dark:text-gray-200">IT Strategy & Roadmap Development</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700 dark:text-gray-200">Digital Transformation Consulting</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700 dark:text-gray-200">Cloud & DevOps Advisory</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud Solutions & DevOps -->
+      <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 flex items-center justify-center bg-green-50 rounded-full text-primary shrink-0">
+            <i class="ri-cloud-line ri-lg"></i>
+          </div>
+          <div>
+            <h3 class="text-xl font-semibold mb-2">Cloud Solutions & DevOps</h3>
+            <p class="text-gray-600 dark:text-gray-300">
+              Scalable cloud architecture and DevOps automation to improve performance and deployment speed.
+            </p>
+            <ul class="mt-4 space-y-2">
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700 dark:text-gray-200">Cloud Infrastructure Setup (AWS, Azure, GCP)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700 dark:text-gray-200">CI/CD Pipeline Implementation</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+                  <i class="ri-check-line"></i>
+                </div>
+                <span class="text-gray-700 dark:text-gray-200">Containerization (Docker & Kubernetes)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EPR Services Section -->
+<section class="py-16 bg-white dark:bg-gray-800">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-3">EPR Services</h2>
+<p class="text-gray-600 max-w-2xl mx-auto dark:text-gray-300">Comprehensive Extended Producer Responsibility solutions to ensure your business meets all regulatory requirements.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-green-50 rounded-full text-primary shrink-0">
+<i class="ri-file-list-3-line ri-lg"></i>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-2">EPR Registration</h3>
+<p class="text-gray-600 dark:text-gray-300">Complete assistance with EPR registration process, documentation, and submission to relevant authorities.</p>
+<ul class="mt-4 space-y-2">
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Documentation preparation and verification</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Application submission and follow-up</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Regulatory liaison and representation</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-green-50 rounded-full text-primary shrink-0">
+<i class="ri-bar-chart-line ri-lg"></i>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-2">EPR Target Fulfillment</h3>
+<p class="text-gray-600 dark:text-gray-300">Strategic planning and implementation to meet your EPR collection and recycling targets.</p>
+<ul class="mt-4 space-y-2">
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Target assessment and planning</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Collection network establishment</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Progress monitoring and reporting</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-green-50 rounded-full text-primary shrink-0">
+<i class="ri-file-paper-2-line ri-lg"></i>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-2">Compliance Reporting</h3>
+<p class="text-gray-600 dark:text-gray-300">Comprehensive reporting solutions to maintain compliance with regulatory requirements.</p>
+<ul class="mt-4 space-y-2">
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Quarterly and annual compliance reports</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Documentation and record maintenance</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Audit preparation and support</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-shadow dark:bg-gray-800 dark:border-gray-700">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 flex items-center justify-center bg-green-50 rounded-full text-primary shrink-0">
+<i class="ri-book-open-line ri-lg"></i>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-2">Regulatory Advisory</h3>
+<p class="text-gray-600 dark:text-gray-300">Expert guidance on navigating the complex landscape of environmental regulations in India.</p>
+<ul class="mt-4 space-y-2">
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Regulatory updates and interpretations</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Compliance gap analysis</span>
+</li>
+<li class="flex items-start gap-2">
+<div class="w-5 h-5 flex items-center justify-center text-primary mt-0.5">
+<i class="ri-check-line"></i>
+</div>
+<span class="text-gray-700 dark:text-gray-200">Strategic compliance planning</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Schedule Consultation Section -->
+<section class="py-16 bg-white dark:bg-gray-800" id="schedule">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-3">Schedule a Consultation</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto dark:text-gray-300">Book a call with our experts to discuss your sustainability needs and discover how we can help your business.</p>
+    </div>
+    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden dark:bg-gray-800 dark:border-gray-700">
+      <div class="grid md:grid-cols-2">
+        <!-- Calendar Section -->
+        <div class="p-6 border-b md:border-b-0 md:border-r border-gray-200 dark:border-gray-600">
+          <h3 class="text-xl font-semibold mb-4">Select Date &amp; Time</h3>
+          <!-- Month Navigation -->
+          <div class="flex justify-between items-center mb-4">
+            <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors dark:text-gray-300" id="prev-month">
+              <i class="ri-arrow-left-s-line ri-lg"></i>
+            </button>
+            <h4 class="text-lg font-medium" id="current-month">June 2025</h4>
+            <button class="w-8 h-8 flex items-center justify-center text-gray-600 hover:text-primary transition-colors dark:text-gray-300" id="next-month">
+              <i class="ri-arrow-right-s-line ri-lg"></i>
+            </button>
+          </div>
+          <!-- Calendar -->
+          <table class="custom-calendar w-full mb-6">
+            <thead>
+              <tr>
+                <th class="py-2 text-sm text-gray-600 dark:text-gray-300">Sun</th>
+                <th class="py-2 text-sm text-gray-600 dark:text-gray-300">Mon</th>
+                <th class="py-2 text-sm text-gray-600 dark:text-gray-300">Tue</th>
+                <th class="py-2 text-sm text-gray-600 dark:text-gray-300">Wed</th>
+                <th class="py-2 text-sm text-gray-600 dark:text-gray-300">Thu</th>
+                <th class="py-2 text-sm text-gray-600 dark:text-gray-300">Fri</th>
+                <th class="py-2 text-sm text-gray-600 dark:text-gray-300">Sat</th>
+              </tr>
+            </thead>
+            <tbody id="calendar-body">
+              <!-- Calendar will be populated by JavaScript -->
+            </tbody>
+          </table>
+          <!-- Time Slots -->
+          <div>
+            <h4 class="text-base font-medium mb-3">Available Time Slots (IST)</h4>
+            <div class="grid grid-cols-3 gap-2" id="time-slots">
+              <!-- Time slots will be populated by JavaScript -->
+            </div>
+          </div>
+        </div>
+        <!-- Form Section -->
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-4">Your Information</h3>
+          <form id="consultation-form">
+            <div class="mb-4">
+              <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-200" for="full-name">Full Name</label>
+              <input class="w-full px-3 py-2 border border-gray-300 rounded text-gray-900 dark:text-white bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="full-name" placeholder="Enter your full name" required type="text" />
+            </div>
+            <div class="mb-4">
+              <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-200" for="email">Email Address</label>
+              <input class="w-full px-3 py-2 border border-gray-300 rounded text-gray-900 dark:text-white bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="email" placeholder="Enter your email address" required type="email" />
+            </div>
+            <div class="mb-4">
+              <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-200" for="phone">Phone Number</label>
+              <input class="w-full px-3 py-2 border border-gray-300 rounded text-gray-900 dark:text-white bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="phone" placeholder="Enter your phone number" required type="tel" />
+            </div>
+            <div class="mb-4">
+              <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-200" for="company">Company Name</label>
+              <input class="w-full px-3 py-2 border border-gray-300 rounded text-gray-900 dark:text-white bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="company" placeholder="Enter your company name" required type="text" />
+            </div>
+            <div class="mb-4">
+              <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-200" for="topic">Consultation Topic</label>
+              <div class="relative">
+                <select class="w-full px-3 py-2 border border-gray-300 rounded appearance-none text-gray-900 dark:text-white bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent pr-8" id="topic">
+                  <option value="epr">EPR Registration</option>
+                  <option value="compliance">Compliance Review</option>
+                  <option value="waste">Waste Management</option>
+                  <option value="general">General Inquiry</option>
+                </select>
+                <div class="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
+                  <i class="ri-arrow-down-s-line text-gray-500"></i>
+                </div>
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-200" for="duration">Meeting Duration</label>
+              <div class="flex gap-3">
+                <label class="flex items-center">
+                  <input checked class="hidden" name="duration" type="radio" value="30" />
+                  <div class="w-4 h-4 border border-gray-300 rounded-full mr-2 flex items-center justify-center duration-radio">
+                    <div class="w-2 h-2 rounded-full bg-primary hidden"></div>
+                  </div>
+                  <span>30 minutes</span>
+                </label>
+                <label class="flex items-center">
+                  <input class="hidden" name="duration" type="radio" value="45" />
+                  <div class="w-4 h-4 border border-gray-300 rounded-full mr-2 flex items-center justify-center duration-radio">
+                    <div class="w-2 h-2 rounded-full bg-primary hidden"></div>
+                  </div>
+                  <span>45 minutes</span>
+                </label>
+                <label class="flex items-center">
+                  <input class="hidden" name="duration" type="radio" value="60" />
+                  <div class="w-4 h-4 border border-gray-300 rounded-full mr-2 flex items-center justify-center duration-radio">
+                    <div class="w-2 h-2 rounded-full bg-primary hidden"></div>
+                  </div>
+                  <span>60 minutes</span>
+                </label>
+              </div>
+            </div>
+            <div class="mb-6">
+              <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-200" for="message">Additional Information</label>
+              <textarea class="w-full px-3 py-2 border border-gray-300 rounded text-gray-900 dark:text-white bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" id="message" placeholder="Please share any specific questions or information about your needs" rows="3"></textarea>
+            </div>
+            <button class="w-full bg-primary text-white py-3 rounded-button whitespace-nowrap hover:bg-opacity-90 transition-colors" type="submit">
+              Schedule Consultation
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Testimonials Section -->
+<section class="py-16 bg-white dark:bg-gray-800">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-3">What Our Clients Say</h2>
+<p class="text-gray-600 max-w-2xl mx-auto dark:text-gray-300">Hear from businesses that have successfully implemented our sustainability solutions.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 dark:bg-gray-800 dark:border-gray-700">
+<div class="flex items-center gap-2 mb-4 text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<p class="text-gray-600 mb-6 dark:text-gray-300">"SRM ECO TECH has been instrumental in helping us navigate the complex EPR compliance landscape. Their expertise and guidance have not only ensured our compliance but also helped us implement more sustainable practices across our operations."</p>
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
+<img alt="Rajesh Sharma" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=professional%20Indian%20businessman%20in%20formal%20attire%2C%20headshot%20portrait%2C%20neutral%20background%2C%20clear%20facial%20features%2C%20professional%20lighting&amp;width=100&amp;height=100&amp;seq=3&amp;orientation=squarish"/>
+</div>
+<div>
+<h4 class="font-semibold">Rajesh Sharma</h4>
+<p class="text-sm text-gray-500">Sustainability Director, Horizon Technologies</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 dark:bg-gray-800 dark:border-gray-700">
+<div class="flex items-center gap-2 mb-4 text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+</div>
+<p class="text-gray-600 mb-6 dark:text-gray-300">"The waste management solutions provided by SRM ECO TECH have significantly reduced our environmental footprint and operational costs. Their team's dedication and expertise have made the entire process seamless and effective."</p>
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
+<img alt="Priya Mehta" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=professional%20Indian%20businesswoman%20in%20corporate%20attire%2C%20headshot%20portrait%2C%20neutral%20background%2C%20clear%20facial%20features%2C%20professional%20lighting&amp;width=100&amp;height=100&amp;seq=4&amp;orientation=squarish"/>
+</div>
+<div>
+<h4 class="font-semibold">Priya Mehta</h4>
+<p class="text-sm text-gray-500">Operations Manager, GreenLife Products</p>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 dark:bg-gray-800 dark:border-gray-700">
+<div class="flex items-center gap-2 mb-4 text-yellow-400">
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-fill"></i>
+<i class="ri-star-half-fill"></i>
+</div>
+<p class="text-gray-600 mb-6 dark:text-gray-300">"The custom IT solution developed by SRM ECO TECH has revolutionized how we track and report our sustainability metrics. The system is intuitive, comprehensive, and has saved us countless hours of manual work while improving our compliance reporting."</p>
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
+<img alt="Vikram Patel" class="w-full h-full object-cover object-top" src="https://readdy.ai/api/search-image?query=professional%20Indian%20businessman%20in%20business%20casual%20attire%2C%20headshot%20portrait%2C%20neutral%20background%2C%20clear%20facial%20features%2C%20professional%20lighting&amp;width=100&amp;height=100&amp;seq=5&amp;orientation=squarish"/>
+</div>
+<div>
+<h4 class="font-semibold">Vikram Patel</h4>
+<p class="text-sm text-gray-500">CTO, EcoSmart Solutions</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact Section -->
+<section class="py-16 bg-gray-50 dark:bg-gray-900">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-3">Our Environmental Impact</h2>
+<p class="text-gray-600 max-w-2xl mx-auto dark:text-gray-300">Measurable results that demonstrate our commitment to creating a sustainable future.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Impact Chart 1 -->
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 dark:bg-gray-800 dark:border-gray-700">
+<h3 class="text-xl font-semibold mb-4">Waste Recycled (Tons)</h3>
+<div class="w-full h-[300px]" id="recycling-chart"></div>
+</div>
+<!-- Impact Chart 2 -->
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 dark:bg-gray-800 dark:border-gray-700">
+<h3 class="text-xl font-semibold mb-4">Carbon Footprint Reduction</h3>
+<div class="w-full h-[300px]" id="carbon-chart"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-16 bg-primary text-white">
+<div class="container mx-auto px-4 text-center">
+<h2 class="text-3xl font-bold mb-4">Ready to Start Your Sustainability Journey?</h2>
+<p class="text-green-100 max-w-2xl mx-auto mb-8">Partner with SRM ECO TECH for expert guidance, innovative solutions, and seamless compliance with environmental regulations.</p>
+<div class="flex flex-wrap justify-center gap-4">
+<a class="bg-white text-primary px-6 py-3 rounded-button whitespace-nowrap hover:bg-gray-100 transition-colors dark:bg-gray-800" href="#schedule">
+Schedule a Consultation
+</a>
+<a class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-button whitespace-nowrap hover:bg-white hover:text-primary transition-colors" href="#contact">
+Contact Us
+</a>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-16 bg-white dark:bg-gray-800" id="contact">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-3xl font-bold mb-3">Get in Touch</h2>
+<p class="text-gray-600 max-w-2xl mx-auto dark:text-gray-300">Have questions or ready to discuss your sustainability needs? Reach out to our team.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<!-- Contact Form -->
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 dark:bg-gray-800 dark:border-gray-700">
+  <h3 class="text-xl font-semibold mb-4">Send Us a Message</h3>
+  <form>
+    <div class="grid grid-cols-2 gap-4 mb-4">
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-200" for="contact-name">Full Name</label>
+        <input
+          class="w-full px-3 py-2 border border-gray-300 rounded text-gray-900 dark:text-white bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+          id="contact-name"
+          placeholder="Enter your full name"
+          required
+          type="text"
+        />
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-200" for="contact-email">Email Address</label>
+        <input
+          class="w-full px-3 py-2 border border-gray-300 rounded text-gray-900 dark:text-white bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+          id="contact-email"
+          placeholder="Enter your email address"
+          required
+          type="email"
+        />
+      </div>
+    </div>
+    <div class="mb-4">
+      <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-200" for="contact-subject">Subject</label>
+      <input
+        class="w-full px-3 py-2 border border-gray-300 rounded text-gray-900 dark:text-white bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+        id="contact-subject"
+        placeholder="Enter message subject"
+        required
+        type="text"
+      />
+    </div>
+    <div class="mb-4">
+      <label class="block text-sm font-medium text-gray-700 mb-1 dark:text-gray-200" for="contact-message">Message</label>
+      <textarea
+        class="w-full px-3 py-2 border border-gray-300 rounded text-gray-900 dark:text-white bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+        id="contact-message"
+        placeholder="Enter your message"
+        required
+        rows="5"
+      ></textarea>
+    </div>
+    <button
+      class="bg-primary text-white px-6 py-3 rounded-button whitespace-nowrap hover:bg-opacity-90 transition-colors"
+      type="submit"
+    >
+      Send Message
+    </button>
+  </form>
+</div>
+
+<!-- Contact Information -->
+<div>
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 mb-6 dark:bg-gray-800 dark:border-gray-700">
+<h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 flex items-center justify-center bg-green-100 rounded-full text-primary shrink-0">
+<i class="ri-map-pin-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-medium">Head Office</h4>
+<p class="text-gray-600 dark:text-gray-300">123 Green Park Avenue, Sector 15, New Delhi - 110001, India</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 flex items-center justify-center bg-green-100 rounded-full text-primary shrink-0">
+<i class="ri-phone-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-medium">Phone</h4>
+<p class="text-gray-600 dark:text-gray-300">+91 11 2345 6789</p>
+<p class="text-gray-600 dark:text-gray-300">+91 98765 43210</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 flex items-center justify-center bg-green-100 rounded-full text-primary shrink-0">
+<i class="ri-mail-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-medium">Email</h4>
+<p class="text-gray-600 dark:text-gray-300">info@srmecotech.com</p>
+<p class="text-gray-600 dark:text-gray-300">support@srmecotech.com</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 flex items-center justify-center bg-green-100 rounded-full text-primary shrink-0">
+<i class="ri-time-line ri-lg"></i>
+</div>
+<div>
+<h4 class="font-medium">Business Hours</h4>
+<p class="text-gray-600 dark:text-gray-300">Monday - Friday: 9:00 AM - 6:00 PM</p>
+<p class="text-gray-600 dark:text-gray-300">Saturday: 9:00 AM - 1:00 PM</p>
+</div>
+</div>
+</div>
+<div class="mt-6">
+<h4 class="font-medium mb-3">Connect With Us</h4>
+<div class="flex gap-3">
+<a class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition-colors dark:bg-gray-800 dark:text-gray-300" href="#">
+<i class="ri-linkedin-fill ri-lg"></i>
+</a>
+<a class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition-colors dark:bg-gray-800 dark:text-gray-300" href="#">
+<i class="ri-twitter-x-fill ri-lg"></i>
+</a>
+<a class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition-colors dark:bg-gray-800 dark:text-gray-300" href="#">
+<i class="ri-facebook-fill ri-lg"></i>
+</a>
+<a class="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full text-gray-600 hover:bg-primary hover:text-white transition-colors dark:bg-gray-800 dark:text-gray-300" href="#">
+<i class="ri-instagram-fill ri-lg"></i>
+</a>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 dark:bg-gray-800 dark:border-gray-700">
+<h3 class="text-xl font-semibold mb-4">Our Locations</h3>
+<div class="h-[200px] bg-gray-100 rounded overflow-hidden dark:bg-gray-800">
+<img alt="SRM ECO TECH Locations" class="w-full h-full object-cover" src="https://public.readdy.ai/gen_page/map_placeholder_1280x720.png"/>
+</div>
+<div class="mt-4 grid grid-cols-2 gap-4">
+<div>
+<h4 class="font-medium">Delhi (HQ)</h4>
+<p class="text-sm text-gray-600 dark:text-gray-300">New Delhi - 110001</p>
+</div>
+<div>
+<h4 class="font-medium">Mumbai</h4>
+<p class="text-sm text-gray-600 dark:text-gray-300">Mumbai - 400001</p>
+</div>
+<div>
+<h4 class="font-medium">Bangalore</h4>
+<p class="text-sm text-gray-600 dark:text-gray-300">Bangalore - 560001</p>
+</div>
+<div>
+<h4 class="font-medium">Hyderabad</h4>
+<p class="text-sm text-gray-600 dark:text-gray-300">Hyderabad - 500001</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="py-12 bg-gray-50 dark:bg-gray-900">
+  <div class="container mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h2 class="text-2xl font-bold mb-3">Subscribe to Our Newsletter</h2>
+      <p class="text-gray-600 mb-6 dark:text-gray-300">
+        Stay updated with the latest sustainability news, regulatory updates, and industry insights.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+        <input
+          class="flex-grow px-4 py-3 border border-gray-300 rounded-lg text-gray-900 dark:text-white bg-white dark:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+          placeholder="Enter your email address"
+          type="email"
+        />
+        <button
+          class="bg-primary text-white px-6 py-3 rounded-button whitespace-nowrap hover:bg-opacity-90 transition-colors"
+        >
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white pt-12 pb-6">
+<div class="container mx-auto px-4">
+<div class="grid md:grid-cols-4 gap-8 mb-8">
+<!-- Company Info -->
+<div>
+<a class="flex items-center gap-2 mb-4" href="#">
+<span class="text-2xl font-['Pacifico'] text-white">SRM ECO TECH</span>
+</a>
+<p class="text-gray-400 mb-4">Sustainable solutions for a greener tomorrow. Expert guidance on EPR compliance, waste management, and innovative IT services.</p>
+<div class="flex gap-3">
+<a class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:text-white transition-colors" href="#">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:text-white transition-colors" href="#">
+<i class="ri-twitter-x-fill"></i>
+</a>
+<a class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:text-white transition-colors" href="#">
+<i class="ri-facebook-fill"></i>
+</a>
+<a class="w-8 h-8 flex items-center justify-center bg-gray-800 rounded-full text-gray-400 hover:text-white transition-colors" href="#">
+<i class="ri-instagram-fill"></i>
+</a>
+</div>
+</div>
+<!-- Quick Links -->
+<div>
+<h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+<ul class="space-y-2">
+<li><a class="text-gray-400 hover:text-white transition-colors" href="#services">Services</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors" href="#about">About Us</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors" href="#process">Our Process</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors" href="#notices">Notice Board</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors" href="#contact">Contact Us</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors" href="careers.html">Careers</a></li>
+
+</ul>
+</div>
+<!-- Services -->
+<div>
+<h3 class="text-lg font-semibold mb-4">Our Services</h3>
+<ul class="space-y-2">
+<li><a class="text-gray-400 hover:text-white transition-colors" href="#">EPR Registration</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors" href="#">Waste Management</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors" href="#">Compliance Reporting</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors" href="#">IT Solutions</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors" href="#">Sustainability Consulting</a></li>
+<li><a class="text-gray-400 hover:text-white transition-colors" href="#">Regulatory Advisory</a></li>
+</ul>
+</div>
+<!-- Contact Info -->
+<div>
+<h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+<ul class="space-y-3">
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center text-gray-400 mt-0.5">
+<i class="ri-map-pin-line"></i>
+</div>
+<span class="text-gray-400">123 Green Park Avenue, Sector 15, New Delhi - 110001, India</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center text-gray-400 mt-0.5">
+<i class="ri-phone-line"></i>
+</div>
+<span class="text-gray-400">+91 11 2345 6789</span>
+</li>
+<li class="flex items-start gap-3">
+<div class="w-5 h-5 flex items-center justify-center text-gray-400 mt-0.5">
+<i class="ri-mail-line"></i>
+</div>
+<span class="text-gray-400">info@srmecotech.com</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-6 border-t border-gray-800 text-center text-gray-500 text-sm dark:border-gray-700">
+<div class="flex flex-wrap justify-center gap-4 mb-4">
+<a class="hover:text-gray-300 transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-gray-300 transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-gray-300 transition-colors" href="#">Cookie Policy</a>
+<a class="hover:text-gray-300 transition-colors" href="#">Sitemap</a>
+</div>
+<p>© 2025 SRM ECO TECH. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<!-- Mobile Menu Script -->
+<script id="slider-script">
+document.addEventListener('DOMContentLoaded', function() {
+const slides = document.querySelectorAll('.slide');
+const dot1 = document.getElementById('dot1');
+const dot2 = document.getElementById('dot2');
+if (!slides.length || !dot1 || !dot2) return;
+const dots = [dot1, dot2];
+let currentSlide = 0;
+let isTransitioning = false;
+function showSlide(index) {
+if (isTransitioning) return;
+isTransitioning = true;
+const currentSlideElement = slides[currentSlide];
+const nextSlideElement = slides[index];
+currentSlideElement.style.transition = 'opacity 1.5s ease-in-out';
+nextSlideElement.style.transition = 'opacity 1.5s ease-in-out';
+currentSlideElement.style.opacity = '0';
+nextSlideElement.style.opacity = '1';
+dots.forEach(dot => dot.classList.replace('bg-primary', 'bg-gray-300'));
+dots[index].classList.replace('bg-gray-300', 'bg-primary');
+setTimeout(() => {
+isTransitioning = false;
+currentSlide = index;
+}, 1500);
+}
+function nextSlide() {
+const nextIndex = (currentSlide + 1) % slides.length;
+showSlide(nextIndex);
+}
+dots.forEach((dot, index) => {
+dot.addEventListener('click', () => {
+if (index !== currentSlide) {
+showSlide(index);
+}
+});
+});
+setInterval(nextSlide, 7000);
+});
+</script>
+<script id="mobile-menu-script">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobile-menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
+const mobileServicesMenu = document.getElementById('mobile-services-menu');
+const mobileServicesSubmenu = document.getElementById('mobile-services-submenu');
+if (!mobileMenuButton || !mobileMenu || !mobileServicesMenu || !mobileServicesSubmenu) return;
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+if (mobileMenu.classList.contains('hidden')) {
+mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-lg"></i>';
+} else {
+mobileMenuButton.innerHTML = '<i class="ri-close-line ri-lg"></i>';
+}
+});
+mobileServicesMenu.addEventListener('click', function() {
+mobileServicesSubmenu.classList.toggle('hidden');
+const arrow = mobileServicesMenu.querySelector('i');
+if (mobileServicesSubmenu.classList.contains('hidden')) {
+arrow.className = 'ri-arrow-down-s-line';
+} else {
+arrow.className = 'ri-arrow-up-s-line';
+}
+});
+// Close mobile menu when clicking on a link
+const mobileLinks = mobileMenu.querySelectorAll('a');
+mobileLinks.forEach(link => {
+link.addEventListener('click', function() {
+mobileMenu.classList.add('hidden');
+mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-lg"></i>';
+});
+});
+});
+</script>
+<!-- Notice Board Tabs Script -->
+<script id="notice-board-script">
+document.addEventListener('DOMContentLoaded', function() {
+const tabCpcb = document.getElementById('tab-cpcb');
+const tabCompany = document.getElementById('tab-company');
+const contentCpcb = document.getElementById('content-cpcb');
+const contentCompany = document.getElementById('content-company');
+if (!tabCpcb || !tabCompany || !contentCpcb || !contentCompany) return;
+tabCpcb.addEventListener('click', function() {
+tabCpcb.classList.add('text-primary', 'border-primary');
+tabCpcb.classList.remove('text-gray-600');
+tabCompany.classList.remove('text-primary', 'border-primary');
+tabCompany.classList.add('text-gray-600');
+contentCpcb.classList.remove('hidden');
+contentCompany.classList.add('hidden');
+});
+tabCompany.addEventListener('click', function() {
+tabCompany.classList.add('text-primary', 'border-primary');
+tabCompany.classList.remove('text-gray-600');
+tabCpcb.classList.remove('text-primary', 'border-primary');
+tabCpcb.classList.add('text-gray-600');
+contentCompany.classList.remove('hidden');
+contentCpcb.classList.add('hidden');
+});
+});
+</script>
+<!-- Calendar Script -->
+<script id="calendar-script">
+document.addEventListener('DOMContentLoaded', function() {
+const calendarBody = document.getElementById('calendar-body');
+const currentMonthElement = document.getElementById('current-month');
+const prevMonthButton = document.getElementById('prev-month');
+const nextMonthButton = document.getElementById('next-month');
+const timeSlots = document.getElementById('time-slots');
+if (!calendarBody || !currentMonthElement || !prevMonthButton || !nextMonthButton || !timeSlots) return;
+let currentDate = new Date(2025, 5, 2); // June 2, 2025
+let selectedDate = null;
+let selectedTimeSlot = null;
+// Generate calendar
+function generateCalendar(year, month) {
+calendarBody.innerHTML = '';
+const firstDay = new Date(year, month, 1);
+const lastDay = new Date(year, month + 1, 0);
+const daysInMonth = lastDay.getDate();
+const startingDay = firstDay.getDay();
+currentMonthElement.textContent = firstDay.toLocaleString('default', { month: 'long', year: 'numeric' });
+let date = 1;
+for (let i = 0; i < 6; i++) {
+if (date > daysInMonth) break;
+const row = document.createElement('tr');
+for (let j = 0; j < 7; j++) {
+const cell = document.createElement('td');
+if (i === 0 && j < startingDay) {
+// Empty cells before the first day of the month
+cell.classList.add('unavailable');
+} else if (date > daysInMonth) {
+// Empty cells after the last day of the month
+cell.classList.add('unavailable');
+} else {
+cell.textContent = date;
+const cellDate = new Date(year, month, date);
+const today = new Date(2025, 5, 2); // June 2, 2025
+if (cellDate < today) {
+// Past dates
+cell.classList.add('unavailable');
+} else if (cellDate.getDay() === 0) {
+// Sundays
+cell.classList.add('unavailable');
+} else {
+// Available dates
+cell.classList.add('available');
+cell.addEventListener('click', function() {
+// Remove selected class from previously selected date
+const selectedCells = document.querySelectorAll('.custom-calendar td.selected');
+selectedCells.forEach(cell => cell.classList.remove('selected'));
+// Add selected class to clicked date
+cell.classList.add('selected');
+// Update selected date
+selectedDate = new Date(year, month, parseInt(cell.textContent));
+// Generate time slots
+generateTimeSlots();
+});
+}
+date++;
+}
+row.appendChild(cell);
+}
+calendarBody.appendChild(row);
+}
+}
+// Generate time slots
+function generateTimeSlots() {
+timeSlots.innerHTML = '';
+// Sample time slots
+const slots = ['10:00 AM', '11:00 AM', '12:00 PM', '2:00 PM', '3:00 PM', '4:00 PM'];
+slots.forEach(slot => {
+const slotElement = document.createElement('div');
+slotElement.className = 'time-slot py-2 px-3 border border-gray-300 rounded text-center text-sm';
+slotElement.textContent = slot;
+slotElement.addEventListener('click', function() {
+// Remove selected class from previously selected time slot
+const selectedSlots = document.querySelectorAll('.time-slot.selected');
+selectedSlots.forEach(slot => slot.classList.remove('selected'));
+// Add selected class to clicked time slot
+slotElement.classList.add('selected');
+// Update selected time slot
+selectedTimeSlot = slot;
+});
+timeSlots.appendChild(slotElement);
+});
+}
+// Initialize calendar
+generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+// Previous month button
+prevMonthButton.addEventListener('click', function() {
+currentDate.setMonth(currentDate.getMonth() - 1);
+generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+});
+// Next month button
+nextMonthButton.addEventListener('click', function() {
+currentDate.setMonth(currentDate.getMonth() + 1);
+generateCalendar(currentDate.getFullYear(), currentDate.getMonth());
+});
+// Custom radio buttons
+const durationRadios = document.querySelectorAll('input[name="duration"]');
+durationRadios.forEach(radio => {
+radio.addEventListener('change', function() {
+// Remove selected class from all radio indicators
+document.querySelectorAll('.duration-radio div').forEach(indicator => {
+indicator.classList.add('hidden');
+});
+// Add selected class to the selected radio indicator
+if (this.checked) {
+this.parentElement.querySelector('.duration-radio div').classList.remove('hidden');
+}
+});
+});
+// Form submission
+const consultationForm = document.getElementById('consultation-form');
+consultationForm.addEventListener('submit', function(e) {
+e.preventDefault();
+if (!selectedDate || !selectedTimeSlot) {
+alert('Please select a date and time for your consultation.');
+return;
+}
+// Form validation and submission logic would go here
+alert('Consultation scheduled successfully! We will send a confirmation email shortly.');
+// Reset form
+consultationForm.reset();
+// Reset selected date and time
+const selectedCells = document.querySelectorAll('.custom-calendar td.selected');
+selectedCells.forEach(cell => cell.classList.remove('selected'));
+const selectedSlots = document.querySelectorAll('.time-slot.selected');
+selectedSlots.forEach(slot => slot.classList.remove('selected'));
+selectedDate = null;
+selectedTimeSlot = null;
+// Reset duration radio buttons
+document.querySelector('input[name="duration"][value="30"]').checked = true;
+document.querySelectorAll('.duration-radio div').forEach(indicator => {
+indicator.classList.add('hidden');
+});
+document.querySelector('input[name="duration"][value="30"]').parentElement.querySelector('.duration-radio div').classList.remove('hidden');
+});
+});
+</script>
+<!-- Charts Script -->
+<script id="charts-script">
+document.addEventListener('DOMContentLoaded', function() {
+// Recycling Chart
+const recyclingChartElement = document.getElementById('recycling-chart');
+if(recyclingChartElement && typeof echarts !== 'undefined') {
+try {
+const recyclingChart = echarts.init(recyclingChartElement);
+const recyclingOption = {
+animation: false,
+tooltip: {
+trigger: 'axis',
+backgroundColor: 'rgba(255, 255, 255, 0.8)',
+textStyle: {
+color: '#1f2937'
+}
+},
+grid: {
+top: 10,
+right: 10,
+bottom: 30,
+left: 50
+},
+xAxis: {
+type: 'category',
+data: ['2020', '2021', '2022', '2023', '2024', '2025'],
+axisLine: {
+lineStyle: {
+color: '#d1d5db'
+}
+},
+axisLabel: {
+color: '#1f2937'
+}
+},
+yAxis: {
+type: 'value',
+name: 'Tons',
+nameTextStyle: {
+color: '#1f2937'
+},
+axisLine: {
+lineStyle: {
+color: '#d1d5db'
+}
+},
+axisLabel: {
+color: '#1f2937'
+},
+splitLine: {
+lineStyle: {
+color: '#e5e7eb'
+}
+}
+},
+series: [
+{
+name: 'Plastic Waste',
+type: 'line',
+smooth: true,
+data: [1200, 1800, 2500, 3800, 5200, 7500],
+itemStyle: {
+color: 'rgba(87, 181, 231, 1)'
+},
+lineStyle: {
+width: 3
+},
+showSymbol: false,
+areaStyle: {
+color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+{
+offset: 0,
+color: 'rgba(87, 181, 231, 0.3)'
+},
+{
+offset: 1,
+color: 'rgba(87, 181, 231, 0.1)'
+}
+])
+}
+},
+{
+name: 'E-Waste',
+type: 'line',
+smooth: true,
+data: [800, 1200, 1900, 2600, 3400, 4500],
+itemStyle: {
+color: 'rgba(141, 211, 199, 1)'
+},
+lineStyle: {
+width: 3
+},
+showSymbol: false,
+areaStyle: {
+color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+{
+offset: 0,
+color: 'rgba(141, 211, 199, 0.3)'
+},
+{
+offset: 1,
+color: 'rgba(141, 211, 199, 0.1)'
+}
+])
+}
+}
+]
+};
+recyclingChart.setOption(recyclingOption);
+// Carbon Chart
+const carbonChartElement = document.getElementById('carbon-chart');
+if(carbonChartElement && typeof echarts !== 'undefined') {
+try {
+const carbonChart = echarts.init(carbonChartElement);
+const carbonOption = {
+animation: false,
+tooltip: {
+trigger: 'item',
+backgroundColor: 'rgba(255, 255, 255, 0.8)',
+textStyle: {
+color: '#1f2937'
+}
+},
+legend: {
+bottom: '0%',
+left: 'center',
+textStyle: {
+color: '#1f2937'
+}
+},
+series: [
+{
+name: 'Carbon Reduction',
+type: 'pie',
+radius: ['40%', '70%'],
+avoidLabelOverlap: false,
+itemStyle: {
+borderRadius: 10,
+borderColor: '#fff',
+borderWidth: 2
+},
+label: {
+show: false,
+position: 'center'
+},
+emphasis: {
+label: {
+show: true,
+fontSize: '18',
+fontWeight: 'bold',
+color: '#1f2937'
+}
+},
+labelLine: {
+show: false
+},
+data: [
+{ value: 45, name: 'Waste Recycling', itemStyle: { color: 'rgba(87, 181, 231, 1)' } },
+{ value: 25, name: 'Process Optimization', itemStyle: { color: 'rgba(141, 211, 199, 1)' } },
+{ value: 20, name: 'Renewable Energy', itemStyle: { color: 'rgba(251, 191, 114, 1)' } },
+{ value: 10, name: 'Other Initiatives', itemStyle: { color: 'rgba(252, 141, 98, 1)' } }
+]
+}
+]
+};
+carbonChart.setOption(carbonOption);
+// Responsive charts
+window.addEventListener('resize', function() {
+try {
+if(recyclingChart) recyclingChart.resize();
+if(carbonChart) carbonChart.resize();
+} catch(error) {
+console.error('Error resizing charts:', error);
+}
+});
+} catch(error) {
+console.error('Error initializing charts:', error);
+}
+}
+}
+});
+</script>
+<script src="main.js"></script>
+<!-- Chatbot Floating Button and Chat Window -->
+<div class="fixed bottom-6 right-6 z-50" id="srm-chatbot">
+<!-- Chatbot Button -->
+<button class="bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:bg-green-700 focus:outline-none" id="srm-chatbot-btn">
+<i class="ri-chat-3-line text-3xl"></i>
+<span class="sr-only">Open Chatbot</span>
+</button>
+<!-- Chat Window (hidden by default) -->
+<div class="hidden mt-4 w-80 max-w-full bg-white rounded-lg shadow-2xl border border-gray-200 flex flex-col overflow-hidden animate-fade-in dark:bg-gray-800 dark:border-gray-600" id="srm-chatbot-window">
+<div class="bg-primary text-white px-4 py-3 flex items-center justify-between">
+<span class="font-bold">SRM Chatbot</span>
+<button class="text-white hover:text-gray-200 focus:outline-none" id="srm-chatbot-close"><i class="ri-close-line text-2xl"></i></button>
+</div>
+<div class="flex-1 p-4 overflow-y-auto" id="srm-chatbot-messages">
+<div class="mb-2 flex items-start gap-2">
+<div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold">S</div>
+<div class="bg-gray-100 rounded-lg px-3 py-2 text-gray-800 max-w-[75%] dark:bg-gray-800 dark:text-gray-100">Hi there! 👋<br/>I'm <b>SRM</b>, your assistant. How can I help you today?</div>
+</div>
+</div>
+<form class="flex border-t border-gray-200 dark:border-gray-700 dark:border-gray-600" id="srm-chatbot-form">
+<input autocomplete="off" class="flex-1 px-3 py-2 focus:outline-none" id="srm-chatbot-input" placeholder="Type your message..." type="text"/>
+<button class="px-4 text-primary font-bold" type="submit">Send</button>
+</form>
+</div>
+</div>
+<!-- Chatbot Script -->
+<script>
+(function() {
+  const btn = document.getElementById('srm-chatbot-btn');
+  const windowEl = document.getElementById('srm-chatbot-window');
+  const closeBtn = document.getElementById('srm-chatbot-close');
+  const form = document.getElementById('srm-chatbot-form');
+  const input = document.getElementById('srm-chatbot-input');
+  const messages = document.getElementById('srm-chatbot-messages');
+  btn.addEventListener('click', function() {
+    windowEl.classList.toggle('hidden');
+    if (!windowEl.classList.contains('hidden')) {
+      setTimeout(() => { input && input.focus(); }, 200);
+    }
+  });
+  closeBtn.addEventListener('click', function() {
+    windowEl.classList.add('hidden');
+  });
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const userMsg = input.value.trim();
+    if (!userMsg) return;
+    // Add user message
+    const userDiv = document.createElement('div');
+    userDiv.className = 'mb-2 flex items-start gap-2 justify-end';
+    userDiv.innerHTML = `<div class='bg-primary text-white rounded-lg px-3 py-2 max-w-[75%]'>${userMsg}</div><div class='w-8 h-8 bg-gray-300 text-gray-700 rounded-full flex items-center justify-center font-bold'>U</div>`;
+    messages.appendChild(userDiv);
+    messages.scrollTop = messages.scrollHeight;
+    input.value = '';
+    // Add SRM reply (static for now)
+    setTimeout(() => {
+      const srmDiv = document.createElement('div');
+      srmDiv.className = 'mb-2 flex items-start gap-2';
+      srmDiv.innerHTML = `<div class='w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold'>S</div><div class='bg-gray-100 rounded-lg px-3 py-2 text-gray-800 max-w-[75%]'>Thank you for your message! An SRM team member will get back to you soon.</div>`;
+      messages.appendChild(srmDiv);
+      messages.scrollTop = messages.scrollHeight;
+    }, 800);
+  });
+})();
+</script>
+<!-- EPR Credit Rate Floating Button (5px above chatbot) -->
+<button class="fixed bottom-24 right-6 z-50 bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:bg-green-700 focus:outline-none border-4 border-white transition-all duration-300" id="epr-credit-btn">
+<i class="ri-stock-line text-3xl"></i>
+<span class="sr-only">Check EPR Credit Rate</span>
+</button>
+<!-- EPR Credit Modal -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 hidden" id="epr-credit-modal">
+<div class="bg-white rounded-xl shadow-2xl w-full max-w-md p-6 relative dark:bg-gray-800">
+<button class="absolute top-3 right-3 text-gray-400 hover:text-primary text-2xl focus:outline-none" id="epr-credit-modal-close"><i class="ri-close-line"></i></button>
+<div id="epr-credit-step-mobile">
+<h2 class="text-xl font-bold mb-2 text-primary flex items-center gap-2"><i class="ri-money-dollar-circle-line"></i> EPR Credit Market Rate</h2>
+<p class="mb-4 text-gray-600 dark:text-gray-300">Enter your mobile number to view the latest plastic category-wise EPR credit rates (per ton).</p>
+<form class="flex flex-col gap-3" id="epr-credit-mobile-form">
+<input class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary" id="epr-credit-mobile" maxlength="10" pattern="[0-9]{10}" placeholder="Mobile Number" required="" type="tel"/>
+<button class="bg-primary text-white px-4 py-2 rounded-button hover:bg-green-700 transition-colors" type="submit">View Rates</button>
+</form>
+</div>
+<div class="hidden" id="epr-credit-step-rates">
+<h2 class="text-xl font-bold mb-2 text-primary flex items-center gap-2"><i class="ri-money-dollar-circle-line"></i> EPR Credit Rates</h2>
+<p class="mb-4 text-gray-600 dark:text-gray-300">Plastic category-wise EPR credit rates (per ton):</p>
+<table class="w-full text-left border border-gray-200 rounded-lg overflow-hidden mb-4 dark:border-gray-600">
+<thead class="bg-gray-100 dark:bg-gray-800">
+<tr>
+<th class="py-2 px-3">Category</th>
+<th class="py-2 px-3">Rate (₹/Ton)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td class="py-2 px-3">PET</td><td class="py-2 px-3">₹2,350</td></tr>
+<tr><td class="py-2 px-3">HDPE</td><td class="py-2 px-3">₹2,100</td></tr>
+<tr><td class="py-2 px-3">LDPE</td><td class="py-2 px-3">₹1,950</td></tr>
+<tr><td class="py-2 px-3">PP</td><td class="py-2 px-3">₹2,200</td></tr>
+<tr><td class="py-2 px-3">Others</td><td class="py-2 px-3">₹1,800</td></tr>
+</tbody>
+</table>
+<button class="bg-primary text-white px-4 py-2 rounded-button hover:bg-green-700 transition-colors w-full" id="epr-credit-modal-done">Done</button>
+</div>
+</div>
+</div>
+<script>
+(function() {
+  const btn = document.getElementById('epr-credit-btn');
+  const modal = document.getElementById('epr-credit-modal');
+  const closeBtn = document.getElementById('epr-credit-modal-close');
+  const doneBtn = document.getElementById('epr-credit-modal-done');
+  const stepMobile = document.getElementById('epr-credit-step-mobile');
+  const stepRates = document.getElementById('epr-credit-step-rates');
+  const form = document.getElementById('epr-credit-mobile-form');
+  const mobileInput = document.getElementById('epr-credit-mobile');
+  btn.addEventListener('click', function() {
+    modal.classList.remove('hidden');
+    stepMobile.classList.remove('hidden');
+    stepRates.classList.add('hidden');
+    mobileInput.value = '';
+    setTimeout(() => { mobileInput && mobileInput.focus(); }, 200);
+  });
+  closeBtn.addEventListener('click', function() {
+    modal.classList.add('hidden');
+  });
+  if (doneBtn) {
+    doneBtn.addEventListener('click', function() {
+      modal.classList.add('hidden');
+    });
+  }
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const mobile = mobileInput.value.trim();
+    if (!/^\d{10}$/.test(mobile)) {
+      mobileInput.classList.add('ring-2', 'ring-red-400');
+      mobileInput.focus();
+      return;
+    }
+    mobileInput.classList.remove('ring-2', 'ring-red-400');
+    stepMobile.classList.add('hidden');
+    stepRates.classList.remove('hidden');
+  });
+})();
+</script>
+<!-- Chatbot Script: Move epr-credit-btn when chatbot is open -->
+<script>
+(function() {
+  const chatbotBtn = document.getElementById('srm-chatbot-btn');
+  const chatbotWindow = document.getElementById('srm-chatbot-window');
+  const chatbotClose = document.getElementById('srm-chatbot-close');
+  const eprBtn = document.getElementById('epr-credit-btn');
+  // Only move the EPR button, do not toggle the chatbot window here
+  function moveEprBtn() {
+    if (!chatbotWindow.classList.contains('hidden')) {
+      eprBtn.classList.add('right-24');
+      eprBtn.classList.remove('right-6');
+    } else {
+      eprBtn.classList.remove('right-24');
+      eprBtn.classList.add('right-6');
+    }
+  }
+  chatbotBtn.addEventListener('click', moveEprBtn);
+  chatbotClose.addEventListener('click', moveEprBtn);
+})();
+</script>
+<!-- Update Notification Popup -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 transition-opacity duration-500" id="update-popup">
+<div class="relative bg-gradient-to-br from-primary/90 via-green-200/90 to-white/90 rounded-2xl shadow-2xl w-full max-w-lg p-8 text-center border-4 border-primary animate-fade-in">
+<button class="absolute top-4 right-4 text-gray-400 hover:text-primary text-3xl focus:outline-none transition-colors" id="update-popup-close"><i class="ri-close-line"></i></button>
+<div class="flex flex-col items-center gap-3">
+<div class="bg-primary rounded-full w-16 h-16 flex items-center justify-center shadow-lg mb-2 animate-bounce-slow">
+<i class="ri-notification-3-line text-white text-4xl"></i>
+</div>
+<h2 class="text-2xl font-extrabold mb-1 text-primary drop-shadow">Update Notification</h2>
+<p class="text-gray-800 mb-2 text-lg font-medium dark:text-gray-100">We have launched a <span class="text-primary font-bold">new Waste Management Dashboard</span> for all clients!<br/>Check your client portal for details.</p>
+<span class="text-xs text-gray-500 mb-2">June 2025</span>
+<label class="flex items-center gap-2 justify-center mt-2 select-none cursor-pointer">
+<input class="accent-primary w-5 h-5 rounded focus:ring-primary" id="update-popup-disable" type="checkbox"/>
+<span class="text-sm text-gray-700 dark:text-gray-200">Don't show this again</span>
+</label>
+</div>
+</div>
+</div>
+<!-- User Login Modal Popup -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 hidden transition-opacity duration-300" id="login-modal">
+  <div class="bg-white rounded-2xl shadow-2xl w-full max-w-sm p-8 relative text-center border-4 border-primary animate-fade-in dark:bg-gray-800">
+    <button class="absolute top-4 right-4 text-gray-400 hover:text-primary text-3xl focus:outline-none transition-colors" id="login-modal-close"><i class="ri-close-line"></i></button>
+    <div class="flex flex-col items-center gap-3 mb-4">
+      <div class="bg-primary rounded-full w-14 h-14 flex items-center justify-center shadow-lg mb-2">
+        <i class="ri-user-line text-white text-3xl"></i>
+      </div>
+      <h2 class="text-xl font-extrabold mb-1 text-primary drop-shadow">User Login</h2>
+    </div>
+    <form class="flex flex-col gap-4" id="login-form">
+      <input class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary text-black" id="login-email" placeholder="Email Address" required type="email" />
+      <input class="border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary text-black" id="login-password" placeholder="Password" required type="password" />
+      <button class="bg-primary text-white px-4 py-2 rounded-button hover:bg-green-700 transition-colors w-full" type="submit">Login</button>
+    </form>
+    <div class="mt-4 text-sm text-gray-600 dark:text-gray-300">
+      Don't have an account? <a class="text-primary font-semibold hover:underline" href="#" id="show-register">Register here</a>
+    </div>
+  </div>
+</div>
+
+<!-- Self-Help EPR Compliance Widget Floating Button -->
+<button class="fixed bottom-44 right-6 z-50 bg-primary text-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:bg-green-700 focus:outline-none" id="epr-selfhelp-btn">
+<i class="ri-question-answer-line text-3xl"></i>
+<span class="sr-only">EPR Self-Help</span>
+</button>
+<!-- Self-Help EPR Compliance Modal -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 hidden transition-opacity duration-300" id="epr-selfhelp-modal">
+<div class="bg-white rounded-2xl shadow-2xl w-full max-w-lg p-8 relative text-center border-4 border-primary animate-fade-in dark:bg-gray-800">
+<button class="absolute top-4 right-4 text-gray-400 hover:text-primary text-3xl focus:outline-none transition-colors" id="epr-selfhelp-close"><i class="ri-close-line"></i></button>
+<div id="epr-selfhelp-steps">
+<!-- Step 1: Category -->
+<div class="epr-step" id="epr-step-category">
+<h2 class="text-xl font-bold mb-4 text-primary">Select Your EPR Category</h2>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<button class="epr-category-btn bg-green-50 border border-primary text-primary font-semibold rounded-lg py-3 hover:bg-primary hover:text-white transition-colors" data-category="Producer">Producer</button>
+<button class="epr-category-btn bg-green-50 border border-primary text-primary font-semibold rounded-lg py-3 hover:bg-primary hover:text-white transition-colors" data-category="Importer">Importer</button>
+<button class="epr-category-btn bg-green-50 border border-primary text-primary font-semibold rounded-lg py-3 hover:bg-primary hover:text-white transition-colors" data-category="Brand Owner">Brand Owner</button>
+<button class="epr-category-btn bg-green-50 border border-primary text-primary font-semibold rounded-lg py-3 hover:bg-primary hover:text-white transition-colors" data-category="Other">Other</button>
+</div>
+</div>
+<!-- Step 2: EPR Type -->
+<div class="epr-step hidden" id="epr-step-type">
+<h2 class="text-xl font-bold mb-4 text-primary">Select EPR Type</h2>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<button class="epr-type-btn bg-blue-50 border border-blue-400 text-blue-700 font-semibold rounded-lg py-3 hover:bg-blue-600 hover:text-white transition-colors" data-type="Plastic">Plastic</button>
+<button class="epr-type-btn bg-yellow-50 border border-yellow-400 text-yellow-700 font-semibold rounded-lg py-3 hover:bg-yellow-600 hover:text-white transition-colors" data-type="E-Waste">E-Waste</button>
+<button class="epr-type-btn bg-purple-50 border border-purple-400 text-purple-700 font-semibold rounded-lg py-3 hover:bg-purple-600 hover:text-white transition-colors" data-type="Battery">Battery</button>
+<button class="epr-type-btn bg-orange-50 border border-orange-400 text-orange-700 font-semibold rounded-lg py-3 hover:bg-orange-600 hover:text-white transition-colors" data-type="Used Oil">Used Oil</button>
+</div>
+</div>
+<!-- Step 3: Financial Year -->
+<div class="epr-step hidden" id="epr-step-year">
+<h2 class="text-xl font-bold mb-4 text-primary">Select Financial Year</h2>
+<select class="w-full border border-gray-300 rounded px-3 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-primary" id="epr-fy-select">
+<option value="2022-2023">2022-2023</option>
+<option value="2023-2024">2023-2024</option>
+<option value="2024-2025">2024-2025</option>
+<option value="2025-2026">2025-2026</option>
+</select>
+<button class="bg-primary text-white px-6 py-2 rounded-button hover:bg-green-700 transition-colors" id="epr-fy-next">Next</button>
+</div>
+<!-- Step 4: Data Entry -->
+<div class="epr-step hidden" id="epr-step-data">
+<h2 class="text-xl font-bold mb-4 text-primary">Enter Your Data</h2>
+<form class="flex flex-col gap-4 items-center" id="epr-data-form">
+<input class="w-full border border-gray-300 rounded px-3 py-2" id="epr-purchase" min="0" placeholder="Total Purchase (kg or units)" required="" type="number"/>
+<input class="w-full border border-gray-300 rounded px-3 py-2" id="epr-sales" min="0" placeholder="Total Consumption/Sales (kg or units)" required="" type="number"/>
+<button class="bg-primary text-white px-6 py-2 rounded-button hover:bg-green-700 transition-colors" type="submit">Estimate Target</button>
+</form>
+</div>
+<!-- Step 5: Result -->
+<div class="epr-step hidden" id="epr-step-result">
+<h2 class="text-xl font-bold mb-4 text-primary">Your EPR Compliance Estimate</h2>
+<div class="mb-4 text-lg text-gray-700 dark:text-gray-200" id="epr-result-summary"></div>
+<button class="bg-primary text-white px-6 py-2 rounded-button hover:bg-green-700 transition-colors" id="epr-selfhelp-restart">Start Over</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  const toggle = document.getElementById('dark-mode-toggle');
+  const icon = toggle.querySelector('i');
+
+  // Always start in light mode
+  document.documentElement.classList.remove('dark');
+  localStorage.setItem('theme', 'light');
+
+  toggle.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.toggle('dark');
+    icon.classList.toggle('ri-sun-line', isDark);
+    icon.classList.toggle('ri-moon-line', !isDark);
+    localStorage.theme = isDark ? 'dark' : 'light';
+  });
+</script></body>
+</html>

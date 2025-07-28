@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | SRM ECO TECH</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class' }
+  </script>
+
+  <!-- Remix Icon CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 font-sans">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white shadow-sm dark:bg-gray-800">
+    <div class="container mx-auto px-4 py-4 flex flex-col items-center justify-center gap-2 md:flex-row md:justify-between">
+      <h1 class="text-2xl font-bold text-green-700 dark:text-green-400 text-center">About Us</h1>
+      <div class="flex items-center gap-4 mt-2 md:mt-0">
+        <a href="index.html" class="text-sm text-green-700 hover:underline dark:text-green-400">← Back to Homepage</a>
+        <button id="dark-mode-toggle" aria-label="Toggle Dark Mode"
+          class="w-10 h-10 flex items-center justify-center bg-gray-200 text-gray-700 rounded-full shadow hover:bg-gray-300 transition-colors dark:bg-gray-700 dark:text-gray-200 dark:hover:bg-gray-600">
+          <i class="ri-sun-line ri-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Us Content -->
+  <main class="py-16 px-4 max-w-6xl mx-auto">
+    <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+      SRM ECO TECH is a technology-driven company focused on delivering innovative IT solutions and sustainable environmental compliance services. With expertise across custom software development, automation, BPM applications, and AI integrations, we help businesses modernize their operations and unlock growth.
+    </p>
+    <p class="text-lg text-gray-700 dark:text-gray-300 mb-4">
+      Alongside our core IT services, we are also recognized for our trusted EPR (Extended Producer Responsibility) consultancy, supporting companies in meeting regulatory obligations for plastic waste management. At SRM ECO TECH, we combine technical excellence with environmental responsibility to serve industries across India — from startups to large enterprises — with a vision to digitally empower and sustainably transform the future.
+    </p>
+    <p class="text-lg text-gray-700 dark:text-gray-300">
+      As a part of our dynamic management practices, we offer other services like compliance management and reverse logistics. We are actively involved in campaigns and programs to promote holistic management of electronic and plastic wastes.
+    </p>
+  </main>
+
+  <!-- Vision, Mission, Goal -->
+  <section class="bg-gray-100 dark:bg-gray-900 py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center text-green-700 dark:text-green-400 mb-12">Our Core Values</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Vision Card -->
+        <div class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 hover:scale-105 transition-transform">
+          <div class="flex justify-center mb-4">
+            <i class="ri-eye-line text-5xl text-green-600 dark:text-green-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-green-700 dark:text-green-400 text-center mb-2">Vision</h3>
+          <p class="text-gray-700 dark:text-gray-300 text-center">
+            To be a trusted partner in digital innovation and sustainability for businesses across India, especially in emerging regions.
+          </p>
+        </div>
+
+        <!-- Mission Card -->
+        <div class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 hover:scale-105 transition-transform">
+          <div class="flex justify-center mb-4">
+            <i class="ri-rocket-line text-5xl text-green-600 dark:text-green-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-green-700 dark:text-green-400 text-center mb-2">Mission</h3>
+          <p class="text-gray-700 dark:text-gray-300 text-center">
+            To deliver smart IT solutions and reliable EPR compliance services that help businesses grow, automate, and stay environmentally responsible.
+          </p>
+        </div>
+
+        <!-- Goal Card -->
+        <div class="bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-6 hover:scale-105 transition-transform">
+          <div class="flex justify-center mb-4">
+            <i class="ri-trophy-line text-5xl text-green-600 dark:text-green-400"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-green-700 dark:text-green-400 text-center mb-2">Goal</h3>
+          <p class="text-gray-700 dark:text-gray-300 text-center">
+            To empower businesses with accessible technology and compliance solutions that enhance efficiency, support sustainability, and drive long-term growth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 px-4 max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+    <div>
+      <h3 class="text-2xl font-bold text-green-700 dark:text-green-400 mb-4">Contact With Us</h3>
+      <p class="text-lg mb-2 text-gray-700 dark:text-gray-300"><strong>Mobile:</strong> +91-9874830490</p>
+      <p class="text-lg mb-6 text-gray-700 dark:text-gray-300"><strong>Email:</strong> info@srmecotech.com</p>
+      <p class="text-gray-600 dark:text-gray-400">We’re here to assist you. Whether you need consultation, a quote, or information about our services — feel free to reach out.</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div>
+      <h3 class="text-2xl font-bold text-green-700 dark:text-green-400 mb-4">Request a Call Back</h3>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-gray-700 dark:text-gray-300 mb-1" for="name">First Name*</label>
+          <input type="text" id="name" class="w-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg px-4 py-2" required>
+        </div>
+        <div>
+          <label class="block text-gray-700 dark:text-gray-300 mb-1" for="lastname">Last Name</label>
+          <input type="text" id="lastname" class="w-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg px-4 py-2">
+        </div>
+        <div>
+          <label class="block text-gray-700 dark:text-gray-300 mb-1" for="email">Your Email*</label>
+          <input type="email" id="email" class="w-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg px-4 py-2" required>
+        </div>
+        <div>
+          <label class="block text-gray-700 dark:text-gray-300 mb-1" for="message">Message*</label>
+          <textarea id="message" rows="4" class="w-full border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white rounded-lg px-4 py-2" required></textarea>
+        </div>
+        <button type="submit" class="bg-green-700 text-white px-6 py-2 rounded-lg hover:bg-green-800 transition duration-200">
+          Inquire
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 dark:bg-gray-800 text-center text-gray-500 dark:text-gray-400 py-6 mt-10">
+    &copy; 2025 SRM ECO TECH. All rights reserved.
+  </footer>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const toggle = document.getElementById('dark-mode-toggle');
+    const icon = toggle.querySelector('i');
+
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+      icon.classList.toggle('ri-sun-line');
+      icon.classList.toggle('ri-moon-line');
+    });
+  </script>
+</body>
+</html>

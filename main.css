@@ -1,0 +1,43 @@
+html {
+  scroll-behavior: smooth;
+}
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.hero-section {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.95) 40%, rgba(255, 255, 255, 0.7) 60%, rgba(255, 255, 255, 0.2) 80%, rgba(255, 255, 255, 0) 100%),
+    url('https://readdy.ai/api/search-image?query=professional%20sustainable%20business%20environment%20with%20green%20plants%2C%20modern%20office%20setting%2C%20eco-friendly%20workspace%2C%20natural%20lighting%2C%20clean%20minimal%20design%2C%20soft%20green%20accents%2C%20sustainable%20technology%2C%20recycling%20bins%2C%20energy%20efficient%20lighting%2C%20wooden%20elements&width=1200&height=600&seq=1&orientation=landscape');
+  background-size: cover;
+  background-position: right center;
+}
+.custom-calendar td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+.custom-calendar td.available:hover {
+  background-color: rgba(46, 125, 50, 0.2);
+}
+.custom-calendar td.selected {
+  background-color: #2E7D32;
+  color: white;
+}
+.custom-calendar td.unavailable {
+  color: #d1d5db;
+  cursor: not-allowed;
+}
+.time-slot {
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.time-slot:hover {
+  background-color: rgba(46, 125, 50, 0.1);
+}
+.time-slot.selected {
+  background-color: #2E7D32;
+  color: white;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} 

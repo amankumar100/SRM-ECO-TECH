@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers | EPR Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <style>
+    /* Dark Mode Styling */
+    body.dark {
+      background-color: #1f2937;
+      color: #e5e7eb;
+    }
+    body.dark .bg-white {
+      background-color: #1f2937 !important;
+    }
+    body.dark .text-gray-800 {
+      color: #e5e7eb !important;
+    }
+    body.dark .text-gray-600 {
+      color: #cbd5e1 !important;
+    }
+    /* Input and Select dynamic color */
+    input, select {
+      color: #1f2937; /* Dark text for light mode */
+      transition: all 0.3s ease-in-out;
+    }
+    body.dark input, 
+    body.dark select {
+      background-color: #374151 !important; /* Darker input background */
+      color: #f9fafb !important; /* White text for dark mode */
+      border-color: #4b5563 !important; /* Slightly darker border */
+    }
+    input::placeholder, select {
+      color: #6b7280;
+    }
+    body.dark input::placeholder {
+      color: #d1d5db; /* Lighter placeholder in dark mode */
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-800 transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="bg-gray-100 shadow-sm">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-bold text-primary">Opportunities</a>
+      <button id="themeToggle" class="p-2 rounded-full bg-white shadow hover:shadow-lg transition">
+        <i id="themeIcon" class="ri-moon-line text-xl"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Careers Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h1 class="text-3xl font-bold mb-3">Careers</h1>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Explore career opportunities with us and become part of our innovative team.
+        </p>
+      </div>
+
+      <!-- Job Search & Filters -->
+      <div class="bg-white p-6 rounded-lg shadow-md border border-gray-100 mb-12">
+        <h2 class="text-xl font-semibold mb-4">Job Search</h2>
+        <form class="grid md:grid-cols-4 gap-4">
+          <!-- Role Input -->
+          <input type="text" placeholder="Search by Role" class="border border-gray-300 p-2 rounded w-full">
+          
+          <!-- Experience Filter -->
+          <select class="border border-gray-300 p-2 rounded w-full">
+            <option value="">Experience Level</option>
+            <option value="fresher">Fresher</option>
+            <option value="junior">0-2 Years</option>
+            <option value="mid">2-5 Years</option>
+            <option value="senior">5+ Years</option>
+          </select>
+
+          <!-- Term -->
+          <select class="border border-gray-300 p-2 rounded w-full">
+            <option value="">Job Term</option>
+            <option value="full-time">Full-Time</option>
+            <option value="part-time">Part-Time</option>
+            <option value="internship">Internship</option>
+            <option value="contract">Contract</option>
+          </select>
+
+          <!-- Search Button -->
+          <button type="button" class="bg-primary text-white p-2 rounded hover:bg-green-600 transition">Search</button>
+        </form>
+      </div>
+
+      <!-- Job Openings -->
+      <div class="text-center mb-8">
+        <h2 class="text-2xl font-semibold mb-4">Current Job Openings</h2>
+        <p class="text-gray-600">No openings now</p>
+      </div>
+
+      <!-- Return to Homepage Button -->
+      <div class="text-center">
+        <a href="index.html" class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg shadow">
+          Return to Homepage
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 text-center">
+    <p class="text-gray-600">© 2025 EPR Services. All rights reserved.</p>
+  </footer>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    const themeToggle = document.getElementById("themeToggle");
+    const themeIcon = document.getElementById("themeIcon");
+    const body = document.body;
+
+    // Always start in Light Mode
+    body.classList.remove("dark");
+    themeIcon.classList.replace("ri-sun-line", "ri-moon-line");
+
+    // Toggle Dark Mode
+    themeToggle.addEventListener("click", () => {
+      body.classList.toggle("dark");
+      if (body.classList.contains("dark")) {
+        themeIcon.classList.replace("ri-moon-line", "ri-sun-line");
+      } else {
+        themeIcon.classList.replace("ri-sun-line", "ri-moon-line");
+      }
+    });
+  </script>
+</body>
+</html>
